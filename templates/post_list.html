@@ -8,6 +8,7 @@
 <h1>{{ function }} is working </h1>
 {% for obj in object %}
     {{ obj.pk }}<br>
+    <a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a><br/>
     {{ obj.title }} <br>
     {{ obj.content }}<br>
     {{ obj.timestamp }}<br>
