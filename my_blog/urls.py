@@ -26,7 +26,7 @@ urlpatterns = [
     path('post/', post_home),
     path("post/create",post_create),
     path("post/delete",post_delete),
-    path("post/detail", post_detail),
+    path("post/<int:id>/", post_detail),
     path("post/update", post_update),
     path("post/list", post_list)
 
