@@ -25,9 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('post/', post_home),
     path("post/create",post_create),
-    path("post/delete",post_delete),
+    path("post/delete/<int:id>/",post_delete),
     path("post/<int:id>/", post_detail, name="detail"),
-    path("post/update", post_update),
+    path("post/update/<int:id>/", post_update,name="update"),
     path("post/list", post_list)
 
 ]
