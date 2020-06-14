@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>detail</title>
-</head>
-<body>
+{% extends "base.html" %}
 
+
+{% block content %}
 {{ instance.title }}<br>
 {{ instance.content }}<br>
 {{ instance.timestamp }}<br>
 {{ instance.updated }}<br>
-</body>
-</html>
+{% endblock %}
